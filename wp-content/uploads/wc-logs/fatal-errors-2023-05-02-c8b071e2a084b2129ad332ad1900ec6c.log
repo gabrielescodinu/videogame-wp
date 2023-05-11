@@ -1,0 +1,9 @@
+2023-05-02T06:35:23+00:00 CRITICAL Uncaught Error: Call to undefined function get_nested_menu_items() in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/template-parts/menu-mobile.php:2
+Stack trace:
+#0 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(785): require()
+#1 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(718): load_template('/Users/gabriele...', false, Array)
+#2 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/header.php(44): get_template_part('template-parts/...', 'mobile')
+#4 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(783): require_once('/Users/gabriele...')
+#5 /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-includes/template.php(718): load_template('/Users/gabri in /Users/gabrielescodinu/Documents/Sites/videogameshop/app/public/wp-content/themes/steam/template-parts/menu-mobile.php alla riga 2
+

@@ -1,0 +1,39 @@
+<!-- navbar -->
+<div class="w-full absolute z-20" data-aos="fade-down">
+    <a class="p-8 lg:pl-24 4xl:pl-96 z-30 absolute" :class="!open ? 'exit' : 'active'" href="index.html">
+        <img class="w-48" src="../assets/images/loghi/logo_steam.png" alt="">
+    </a>
+
+    <div x-data="{ open: false }">
+        <div class="p-8 z-20 absolute w-full">
+            <button x-on:click="open = ! open" id="hamburger" class="lg:pr-24 4xl:pr-96 transform scale-125 hamburger hamburger--emphatic not-active right-8 absolute" :class="!open ? '' : 'is-active'" type="button" data-status="closed">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
+        <div id="menu" class="flex flex-col justify-center w-screen h-screen z-10 fixed swipe swipe-left bg-steam-darkblue" :class="!open ? '' : 'swipe-right'">
+            <div class="p-8 lg:px-24 4xl:px-96 flex flex-col text-white">
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="mission.html"><p class="text-xl underline-animation">About</p></a> 
+                </div>
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="chi-siamo.html"><p class="text-xl underline-animation">Community</p></a> 
+                </div>
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="progetti.html"><p class="text-xl underline-animation">Support</p></a> 
+                </div>
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="reports.html"><p class="text-xl underline-animation">Login</p></a> 
+                </div>
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="eventi.html"><p class="text-xl underline-animation">Account</p></a> 
+                </div>
+                <div class="mb-4 menu_item" :class="!open ? 'exit' : 'active'"> 
+                    <a href="osservatori.html"><p class="text-xl underline-animation">Cart</p></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Luiss Sans';
+    src: url('LuissSans-Regular.eot');
+    src: url('LuissSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LuissSans-Regular.woff2') format('woff2'),
+        url('LuissSans-Regular.woff') format('woff'),
+        url('LuissSans-Regular.ttf') format('truetype'),
+        url('LuissSans-Regular.svg#LuissSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Luiss Sans';
+    src: url('LuissSans-Regular_1.eot');
+    src: url('LuissSans-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('LuissSans-Regular_1.woff2') format('woff2'),
+        url('LuissSans-Regular_1.woff') format('woff'),
+        url('LuissSans-Regular_1.ttf') format('truetype'),
+        url('LuissSans-Regular_1.svg#LuissSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Luiss Sans';
+    src: url('LuissSans-Bold.eot');
+    src: url('LuissSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LuissSans-Bold.woff2') format('woff2'),
+        url('LuissSans-Bold.woff') format('woff'),
+        url('LuissSans-Bold.ttf') format('truetype'),
+        url('LuissSans-Bold.svg#LuissSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Luiss Serif';
+    src: url('LuissSerif-Regular.eot');
+    src: url('LuissSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LuissSerif-Regular.woff2') format('woff2'),
+        url('LuissSerif-Regular.woff') format('woff'),
+        url('LuissSerif-Regular.ttf') format('truetype'),
+        url('LuissSerif-Regular.svg#LuissSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Luiss Sans';
+    src: url('LuissSans-Regular_2.eot');
+    src: url('LuissSans-Regular_2.eot?#iefix') format('embedded-opentype'),
+        url('LuissSans-Regular_2.woff2') format('woff2'),
+        url('LuissSans-Regular_2.woff') format('woff'),
+        url('LuissSans-Regular_2.ttf') format('truetype'),
+        url('LuissSans-Regular_2.svg#LuissSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

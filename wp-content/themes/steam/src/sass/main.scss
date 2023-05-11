@@ -1,0 +1,248 @@
+/*
+Theme Name: steam
+Theme URI: https://pezzilli.com/
+Author: P&Co.
+Author URI: https://pezzilli.com/
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pco
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "_fonts.scss";
+@import "../../node_modules/hamburgers/dist/hamburgers.min.css";
+@import "../../node_modules/aos/dist/aos.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  // font-family: 'Luiss Sans' !important;
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #121212;
+}
+
+/* swiper js */
+.swiper-scrollbar-drag {
+  background-color: #66c0f4 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+.swiper-scrollbar {
+  left: 0px !important;
+  bottom: 0px !important;
+}
+.swiper-button-next {
+  color: #2eb0fb !important;
+}
+.swiper-button-prev {
+  color: #2eb0fb !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #2eb0fb !important;
+}
+.swiper-pagination-bullet {
+  background-color: #2eb0fb !important;
+}
+
+/* hamburger */
+.hamburger-inner {
+    background-color: #fff !important;
+    height: 2px;
+    &:before {
+        background-color: #fff !important;
+        height: 2px;
+    }
+    &:after {
+        background-color: #fff !important;
+        height: 2px;
+    }
+}
+.hamburger--collapse.is-active .hamburger-inner:before {
+  width: 40px;
+}
+
+/* menu animation */
+.swipe{
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(1,.01,0,1.01);
+}
+.swipe-left {
+    transform: translateX(-100%);
+}
+.swipe-right {   
+    transform: translateX(0%);
+}
+.block-scroll {
+    overflow-y: hidden;
+}
+.menu_item{
+    opacity: 0;
+    transition: all;
+    transform: translateX(-100px);
+    &.active{
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        transform: translateX(0px);
+    }
+    &.exit{
+        transform: translateX(-100px);
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }  
+}
+
+/* back to top button */
+#button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* button call to action */
+.slide:hover, .slide:focus {
+  box-shadow: inset 12em 0 0 0 var(--hover);
+}
+.slide {
+  --hover: #66c0f4;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+/* hover underline */
+.underline-animation {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.underline-animation:hover {
+  color: #66c0f4;
+  transition: 0.5s;
+}
+.underline-animation:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: -3px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #66c0f4;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline-animation:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* social footer images */
+.social-footer img {
+  max-height: 25px;
+}
+.social-footer a {
+  max-height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* videogame-card */
+.videogame-card {
+  transition: 0.5s;
+}
+.videogame-card:hover {
+  transition: 0.5s;
+  border: 2px solid white !important;
+  box-shadow: 0 0 0px #66c0f4, 0 0 0px #66c0f4, 0 0 2px #66c0f4, 0 0 20px #66c0f4;
+}
+.genre-card {
+  transition: 0.5s;
+  border: 2px solid #121212 !important;
+}
+.genre-card:hover {
+  transition: 0.5s;
+  border: 2px solid white !important;
+  box-shadow: 0 0 0px #66c0f4, 0 0 0px #66c0f4, 0 0 2px #66c0f4, 0 0 20px #66c0f4;
+}
+
+/* navigation */
+.pagination {
+  width: fit-content !important;
+}
+.navigation {
+  width: 100% !important;
+}
+.nav-links {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+}
+.page-numbers {
+  transition: 0.5s;
+  margin: 0px 5px;
+  border: 2px solid #66c0f4;
+  padding: 5px 10px;
+  &:hover {
+    background-color: #66c0f4;
+    transition: 0.5s;
+  }
+}
+
+/* checkout customization */
+.checkout input {
+  background-color: transparent !important;
+  padding: 5px 10px !important;
+  margin: 10px 0px !important;
+  border-bottom: 1px solid white !important;
+}
+.checkout textarea {
+  background-color: transparent !important;
+  padding: 5px 10px !important;
+  margin: 10px 0px !important;
+  border: 1px solid white !important;
+}
+.checkout select {
+  margin: 0px 10px !important;
+}
+.checkout .select2-selection {
+  border-radius: 0px !important;  
+  border: 0px solid white !important;
+}

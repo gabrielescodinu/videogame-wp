@@ -1,0 +1,6 @@
+*.DS_Store
+*.wpress
+wp-content/themes/steam/node_modules
+wp-content/themes/steam/dist
+wp-content/themes/steam/assets
+wp-content/themes/steam/.vscode
